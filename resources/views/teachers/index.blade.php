@@ -16,10 +16,9 @@
 					<tr>
 						<td>{{ $teacher->id }}</td>
 						<td>{{ $teacher->name }}</td>
-						<td>{{ $teacher->advisory_name }}</td>
+						<td>{{ $teacher->advisory_section }}</td>
 
-						<!--<td><a href="/subjects/{{ $subject->id }}">View</a></td>
-						<td><a href="/subjects/{{ $subject->name }}/edit">Edit</a></td>-->
+						
 					</tr>
 				@endforeach
 			</tbody>

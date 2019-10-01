@@ -21,14 +21,14 @@ class TeachersController extends Controller
     {
         request()->validate([
             'name' => 'required',
-            'advisory_name' => 'required',
+            'advisory_section' => 'required',
 
             
         ]);
         
     	$teacher = new Teachers;
     	$teacher->name = request()->name;
-    	$teacher->advisory_name = request()->advisory_name;
+    	$teacher->advisory_section = request()->advisory_section;
     	$teacher->save();
 
     	return redirect('/teachers');

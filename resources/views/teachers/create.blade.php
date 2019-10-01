@@ -7,7 +7,8 @@
 		  <div class="form-group">
 		 
 		    <input type="text" class="form-control" name='name' aria-describedby="emailHelp" placeholder="Teachers Name">
-		    <input type="text" class="form-control" name='advisory_name' aria-describedby="emailHelp" placeholder="Advisory">
+		    <br>
+		    <input type="text" class="form-control" name='advisory_section' aria-describedby="emailHelp" placeholder="Advisory">
 
 		  </div>
 		  
