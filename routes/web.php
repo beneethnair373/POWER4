@@ -26,9 +26,9 @@ Route::post('/teachers/store', 'TeachersController@store');
 Route::get('/sections', 'SectionsController@index');
 Route::get('/sections/add', 'SectionsController@create');
 Route::post('/sections/store', 'SectionsController@store');
-Route::get('/subject-strands', 'SubjectStrandController@index');
-Route::get('/subject-strands/add', 'SubjectStrandController@create');
-Route::post('/subject-strands/store', 'SubjectStrandController@store');
+Route::get('/subject-strands', 'SubjectStrandsController@index');
+Route::get('/subject-strands/add', 'SubjectStrandsController@create');
+Route::post('/subject-strands/store', 'SubjectStrandsController@store');
 
 
 
