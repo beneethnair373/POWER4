@@ -21,6 +21,6 @@
 			
 			
 		</table>
-		<a class="btn btn-primary" href='/sections/add'>Add New Subject Strand</a>
+		<a class="btn btn-primary" href='/subject-strand/add'>Add New Subject Strand</a>
 	</div>
 @endsection

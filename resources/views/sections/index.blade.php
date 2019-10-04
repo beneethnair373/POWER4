@@ -6,6 +6,7 @@
 				<tr>
 					<th scope="col">ID</th>
 					<th scope="col">Name</th>
+					<th scope="col">is_active</th>
 					
 				</tr>
 			</thead>
@@ -14,6 +15,7 @@
 					<tr>
 						<td>{{ $section->id }}</td>
 						<td>{{ $section->name }}</td>
+						<td>{{ $section->is_active }}</td>
 						
 					</tr>
 				@endforeach

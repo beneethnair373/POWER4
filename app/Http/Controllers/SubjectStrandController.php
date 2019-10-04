@@ -9,12 +9,12 @@ class SubjectStrandsController extends Controller
 {
     public function index()
     {
-    	$subjectstrand = SubjectStrands::all();
-    	return view('subjects.index')->with('subjectstrand', $subjectstrands);
+    	$subjects = SubjectStrands::all();
+    	return view('subjectstrands.index')->with('subjectstrands', $subjects);
     }
     public function create()
     {
-    	return view('subjectsstrand.create');
+    	return view('subjectstrands.create');
     }
     public function store()
     {
