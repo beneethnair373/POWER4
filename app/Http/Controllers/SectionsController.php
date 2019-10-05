@@ -10,8 +10,8 @@ class SectionsController extends Controller
     
     public function index()
     {
-    	$subjects = Sections::all();
-    	return view('sections.index')->with('sections', $subjects);
+    	$sections = Sections::all();
+    	return view('sections.index')->with('sections', $sections);
     }
     public function create()
     {
@@ -34,3 +34,4 @@ class SectionsController extends Controller
     	return redirect('/sections');
     }
 }
+   

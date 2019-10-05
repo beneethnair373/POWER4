@@ -7,6 +7,7 @@
 					<th scope="col">ID</th>
 					<th scope="col">Name</th>
 					<th scope="col">Advisory Section</th>
+					<th scope="col">Actions</th>
 
 					
 				</tr>
@@ -17,6 +18,7 @@
 						<td>{{ $teacher->id }}</td>
 						<td>{{ $teacher->name }}</td>
 						<td>{{ $teacher->advisory_section }}</td>
+						<td><a href="/teachers/{{ $teacher->id }}/edit">Edit</a></td>
 
 						
 					</tr>

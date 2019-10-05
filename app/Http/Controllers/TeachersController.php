@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Teachers;
+use App\Sections;
 
 class TeachersController extends Controller
 {
@@ -16,6 +17,12 @@ class TeachersController extends Controller
     public function create()
     {
     	return view('teachers.create');
+    }
+    public function edit(Teachers $teacher)
+    {
+       $section = Sections::all();
+       return view('teachers,edit',compact('teacher', 'sections'));
+       //dd($teacher);
     }
     public function store()
     {
