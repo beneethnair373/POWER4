@@ -1,8 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
-			@csrf
-<form method="POST" action="/teachers/{{$teacher->id}}/edit">
+<form method="POST" action="/teachers/{{$teacher->id}}/update">
 	@csrf
 	<input value= '{{$teacher->id}}' type='hidden' name='id'>
 	<select name='advisory_section'>

@@ -19,14 +19,12 @@ class SubjectStrandsController extends Controller
     public function store()
     {
         request()->validate([
-            'name' => 'required',
             'semester' => 'required',
             'grade_level' => 'required',
             
         ]);
         
     	$subjectstrands = new Subject_Strands;
-    	$subjectstrands->name = request()->name;
         $subjectstrands->semester = request()->semester;
         $subjectstrands->grade_level = request()->grade_level;
     	$subjectstrands->save();

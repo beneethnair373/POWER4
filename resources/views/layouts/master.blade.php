@@ -18,20 +18,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" style="text-align: center;">
-          <li class="nav-item active">
-            <a class="nav-link" href="/subjects">Subjects</a>
+          <li class="nav-item">
+            <a class="nav-link {{setActive('subjects')}}" href="/subjects">Subjects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/strands">Strands</a>
+            <a class="nav-link {{setActive('strands')}}" href="/strands">Strands</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/teachers">Teachers</a>
+            <a class="nav-link {{setActive('teachers')}}" href="/teachers">Teachers</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="/sections">Sections</a>
+            <a class="nav-link {{setActive('sections')}}" href="/sections">Sections</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/subject-strands">Subject Strands</a>
+            <a class="nav-link {{setActive('subject-strands')}}" href="/subject-strands">Subject Strands</a>
           </li>
           
         </ul>

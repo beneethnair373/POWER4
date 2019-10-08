@@ -8,7 +8,7 @@ use App\Sections;
 
 class TeachersController extends Controller
 {
-    
+
     public function index()
     {
     	$teachers = Teachers::all();
@@ -20,8 +20,8 @@ class TeachersController extends Controller
     }
     public function edit(Teachers $teacher)
     {
-       $section = Sections::all();
-       return view('teachers,edit',compact('teacher', 'sections'));
+       $sections = Sections::all();
+       return view('teachers.edit',compact('teacher', 'sections'));
        //dd($teacher);
     }
     public function store()

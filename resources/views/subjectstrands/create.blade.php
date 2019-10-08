@@ -1,14 +1,9 @@
 @extends('layouts.master')
-@extends('layouts.errors')
 @section('content')
 	<div class="container">
 		
-		<form method="POST" action="/subject_strand/store">
+		<form method="POST" action="/subject-strands/store">
 			@csrf
-		  <div class="form-group">
-		 
-		    <input type="text" class="form-control" name='name' aria-describedby="emailHelp" placeholder="name">
-		  </div>
 		   <div class="form-group">
 		    <label for="description">Semester</label>
 		    <input type="text" class="form-control" name="semester" placeholder="semester">

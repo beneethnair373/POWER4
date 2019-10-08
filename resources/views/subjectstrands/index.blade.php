@@ -1,12 +1,10 @@
 @extends('layouts.master')
-@extends('layouts.errors')
 @section('content')
 	<div class="container">
 		<table class="table">
 			<head>
 				<tr>
 					<th scope="col">ID</th>
-					<th scope="col">Name</th>
 					<th scope="col">Semester</th>
 					<th scope="col">Grade_Level</th>
 					
@@ -16,7 +14,6 @@
 				@foreach($subject_strands as $subject_strand)
 					<tr>
 						<td>{{ $subject_strand->id }}</td>
-						<td>{{ $subject_strand->name }}</td>
 						<td>{{ $subject_strand->semester }}</td>
 						<td>{{ $subject_strand->grade_level }}</td>
 						
@@ -26,6 +23,6 @@
 			
 			
 		</table>
-		<a class="btn btn-primary" href='/subject-strand/add'>Add New Subject Strand</a>
+		<a class="btn btn-primary" href='/subject-strands/add'>Add New Subject Strand</a>
 	</div>
 @endsection
