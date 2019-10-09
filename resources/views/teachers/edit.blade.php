@@ -11,4 +11,5 @@
 	</select>
 
 </form>
+<a class="btn btn-primary" href='/teachers'>Return</a>
 @endsection

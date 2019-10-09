@@ -42,6 +42,8 @@ Route::post('/sections/store', 'SectionsController@store');
 Route::get('/subject-strands', 'SubjectStrandsController@index');
 Route::get('/subject-strands/add', 'SubjectStrandsController@create');
 Route::post('/subject-strands/store', 'SubjectStrandsController@store');
+Route::get('/subject-strands/{subject_strand}/edit', 'SubjectStrandsController@edit');
+Route::post('/subject-strands/{subject_strand}/update', 'SubjectStrandsController@update');
 });
 
 
