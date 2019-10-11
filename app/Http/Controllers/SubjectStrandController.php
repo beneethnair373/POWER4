@@ -17,9 +17,12 @@ class SubjectStrandsController extends Controller
     }
     public function create()
     {
-    	return view('subjectstrands.create');
+    	$subjects= Subjects::all();
+        $strands= Strands::all();
+
+        return view('subjectstrands.create',compact('subjects', 'strands'));
     }
-    public function edit(Subject_Strands $subject_strand)
+    public function edit(Subject_Strands $subject_strand )
     {
        $sections = Sections::all();
        return view('subjectstrands.edit',compact('subject_strand', 'sections'));
@@ -29,7 +32,7 @@ class SubjectStrandsController extends Controller
        return view('subjectstrands.edit',compact('subject_strand', 'subject'));
        //dd($teacher);
     }
-    public function store()
+    public function store(Subjects $subject, Strands $strand)
     {
         request()->validate([
             'semester' => 'required',

@@ -33,6 +33,9 @@
           <li class="nav-item">
             <a class="nav-link {{setActive('subject-strands')}}" href="/subject-strands">Subject Strands</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link {{setActive('logout')}}" href="/">Log Out</a>
+          </li>
           
         </ul>
       </div>

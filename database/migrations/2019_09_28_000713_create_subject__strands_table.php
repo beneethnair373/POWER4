@@ -17,8 +17,8 @@ class CreateSubjectStrandsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('semester');
             $table->integer('grade_level');
-            // $table->string('strand_id');
-            // $table->string('subject_id');
+            $table->string('strand_id');
+            $table->string('subject_id');
             $table->timestamps();
         });
     }
